@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Weather</h1>
+    </div>
+    <div id="main">
+        <img id="weatherImage" alt="loading.." src="unknown.png">
+        <input type="hidden" id="tempVar">
+        <h1><span class="weather" id="temp">-</span><span class="symbol">°</span><a class="weather" id="units" href="#" onclick="toggle(tempVar)">C</a></h1>
+        <h2 id="description">-</h2>
+        <h3 id="place">-</h3>
+    </div>
+    <form id="form" onsubmit="getWeather(document.getElementById('txtCity').value); return false;">
+        <input id="txtCity" type="text" autocomplete="off" placeholder="City">
+        <input id="btn" type="submit" value="GO!">
+    </form>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

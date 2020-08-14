@@ -1,0 +1,86 @@
+* {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    margin: 0 auto;
+    background-color: #FF5733;
+}
+
+#header {
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+#main {
+    border: 2px solid black;
+    border-top: none;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+#form {
+    border: 2px solid black;
+    border-top: none;
+    width: 300px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding: 20px;
+    padding-top: 20px;
+}
+
+#weatherImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+#txtCity {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-right: 10px;
+    font-size: 16px;
+}
+#txtCity:focus {
+    outline: none;
+}
+
+#btn {
+    background-color: #FF5733;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#units {
+    color: #FF5733;
+}
+
+#place, #description {
+    margin-top: 5px;
+}
+
+h1, .symbol, .weather, #place, #units, #header, #txtCity, #weatherImage, #form, #main, #description {
+    background-color: white;
+}
